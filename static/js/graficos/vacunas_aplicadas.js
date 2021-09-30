@@ -1,7 +1,9 @@
 am4core.ready(function() {
 
+var vacunas_aplicadas = JSON.parse(vacunas_aplicadas_json);
+
 // Themes begin
-am4core.useTheme(am4themes_dark);
+am4core.useTheme(am4themes_material);
 am4core.useTheme(am4themes_animated);
 // Themes end
 
@@ -12,8 +14,16 @@ var chart = am4core.create("chartdiv", am4charts.XYChart);
 var dateAxis = chart.xAxes.push(new am4charts.DateAxis());
 var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
 
-for (var i = 0; i < 10; i++) {
-  createSeries("value" + i, "Series #" + i);
+vacunas_disponibles = ['Sputnik',
+ 'AstraZeneca',
+ 'COVISHIELD',
+ 'Sinopharm',
+ 'Moderna',
+ 'Cansino',
+ 'Pfizer']
+
+for (let i = 0; i < vacunas_disponibles.length; i++) {
+  createSeries("value" + i, vacunas_disponibles[i]);
 }
 
 // Create series
@@ -41,17 +51,26 @@ function createSeries(s, name) {
   });
 
   var data = [];
-  var value = Math.round(Math.random() * 100) + 100;
-  for (var i = 1; i < 100; i++) {
-    value += Math.round((Math.random() < 0.5 ? 1 : -1) * Math.random() * 30 + i / 5);
-    var dataItem = { date: new Date(2018, 0, i) };
-    dataItem["value" + s] = value;
-    data.push(dataItem);
+  for (var i = 1; i < vacunas_aplicadas.length; i++) {
+    if (vacunas_aplicadas[i].vacuna == name){
+      var dataItem = { date: new Date(vacunas_aplicadas[i].fecha_aplicacion) };
+      dataItem["value" + s] = vacunas_aplicadas[i].counts;
+      data.push(dataItem);
+    }
   }
 
   series.data = data;
+
+  series.tooltipText = "{valueY}";
   return series;
 }
+
+chart.cursor = new am4charts.XYCursor();
+chart.cursor.xAxis = dateAxis;
+
+var scrollbarX = new am4core.Scrollbar();
+scrollbarX.marginBottom = 20;
+chart.scrollbarX = scrollbarX;
 
 chart.legend = new am4charts.Legend();
 chart.legend.position = "right";
