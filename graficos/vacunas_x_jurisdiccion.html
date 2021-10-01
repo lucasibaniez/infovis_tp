@@ -12,12 +12,16 @@
 		<link href="../static/css/style.css" rel="stylesheet" />
 
 		<style type="text/css">
-			.area_grafico { background-color: #30303d; color: #fff; };
 
 			#chartdiv {
 			  	width: 100%;
+			  	height: 2500px;
 			}
 
+			#chartdiv2 {
+			  	width: 100%;
+			  	height: 2500px;
+			}
 		</style>
 	</head>
 	<body>
@@ -50,7 +54,7 @@
 					<div class="col-md-12">
 						<div class="navbar-collapse collapse ">
 							<ul id="menu-top" class="nav navbar-nav navbar-right">
-								<li><a class="menu-top-active" href="index.html">Inicio</a></li>
+								<li><a class="menu-top-active" href="../index.html">Inicio</a></li>
 								<li><a href="../acerca_de.html">Acerca De</a></li>
 							</ul>
 						</div>
@@ -88,7 +92,15 @@
 
 				<div class="row area_grafico">
 					<div class="col-md-12">
+						<h1>Aplicación 1ra Dosis</h1>
 						<div id="chartdiv"></div>
+					</div>
+				</div>
+
+				<div class="row area_grafico">
+					<div class="col-md-12">
+						<h1>Aplicación 2da Dosis</h1>
+						<div id="chartdiv2"></div>
 					</div>
 				</div>
 
@@ -117,10 +129,9 @@
 		<!-- AmChart Recursos -->
 		<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
 		<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
-		<script src="https://cdn.amcharts.com/lib/4/themes/dark.js"></script>
-		<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+		<script src="https://cdn.amcharts.com/lib/4/themes/kelly.js"></script>
 
-		<script src="datos/vacunas_aplicadas_data.js"></script>
+		<script src="datos/vacunas_x_jurisdiccion_data.js"></script>
 		<script src="../static/js/graficos/vacunas_x_jurisdiccion.js"></script>
 	</body>
 </html>
