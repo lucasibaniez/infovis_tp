@@ -23,6 +23,8 @@ jupyter-lab
 
 * [Python] Pandas, Jupyter para el analisis de datos y contruccion de los datasets.
 * [AmCharts] Para la contruccion de graficos
+* [Tableau] Para la contruccion de graficos
+* [Flourish] Para la contruccion de graficos
 
 ## Autores ✒️
 * **Federico Aguirre** [federodani]
