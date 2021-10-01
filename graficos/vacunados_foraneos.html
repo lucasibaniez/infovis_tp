@@ -12,16 +12,22 @@
 		<link href="../static/css/style.css" rel="stylesheet" />
 
 		<style type="text/css">
+			.area_grafico{ 
+				background-color: #30303d; 
+				color: #fff; 
+
+			}
 
 			#chartdiv {
-			  	width: 100%;
-			  	height: 2500px;
+			  width: 100%;
+			  height: 700px;
 			}
 
 			#chartdiv2 {
-			  	width: 100%;
-			  	height: 2500px;
+			  width: 100%;
+			  height: 800px;
 			}
+
 		</style>
 	</head>
 	<body>
@@ -67,23 +73,23 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h4 class="page-head-line">Vacunas Aplicadas en el Tiempo</h4>
+						<h4 class="page-head-line">Vacunados Foraneos</h4>
 					</div>
 				</div>
 
 				<div class="row">
 	                <div class="col-md-12">
 	                    <div class="alert alert-warning">
-	                    	<h3>Pregunta de Interés:</h3>
-	                        <strong>¿Cómo fue el avance de la vacunación en cada Jurisdicción?</strong>
+	                    	<h3>Pregunta de Interes:</h3>
+	                        <strong>¿Cuantas personas de otras provincias se vacunaron en un lugar distinto al de su residencia?</strong>
 	                        <br>
 	                        <h3>Obtención del dataset:</h3>
 	 						<p>Los datos se encuentran publicos en el siguiente <a href="https://sisa.msal.gov.ar/datos/descargas/covid-19/files/datos_nomivac_covid19.zip">enlace</a></p>
 
 	 						<br>
 	                        <h3>Modelado y Construcción del modelo:</h3>
-	                        <p>Se utilizó Python con Jupyter y pandas para el análisis de los datos y generación del dataset a utilizar en el gráfico.</p>
-	                        <p>Como librería grafica se utilizó <a href="https://www.amcharts.com/"><strong>amCharts</strong></a></p>
+	                        <p>Se utilizo Python con Jupyter y pandas para el analisis de los datos y generación del dataset a utilizar en el gráfico.</p>
+	                        <p>Como libreria grafica se utilizo <a href="https://www.amcharts.com/"><strong>amCharts</strong></a></p>
 	                  
 	                    </div>
 	                </div>
@@ -92,44 +98,20 @@
 
 				<div class="row area_grafico">
 					<div class="col-md-12">
+						<div id="chartdiv"></div>
+					</div>
+				</div>
 
-
-
-
-
-						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-						  	<div class="panel panel-default">
-							    <div class="panel-heading" role="tab" id="headingOne">
-							        <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseDosis1" aria-expanded="true" aria-controls="collapseDosis1"><strong>Aplicación 1ra Dosis (%)</strong></a></h4>						      
-							    </div>
-							    <div id="collapseDosis1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-								    <div class="panel-body">
-								        <div id="chartdiv"></div>
-								    </div>
-							    </div>
-						  	</div>
-
-						  	<div class="panel panel-default">
-							    <div class="panel-heading" role="tab" id="headingOne">
-							        <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseDosis2" aria-expanded="true" aria-controls="collapseDosis2"><strong>Aplicación 2da Dosis (%)</strong></a></h4>						      
-							    </div>
-							    <div id="collapseDosis2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-								    <div class="panel-body">
-								        <div id="chartdiv2"></div>
-								    </div>
-							    </div>
-						  	</div>
-						</div>
-
-
-						
+				<div class="row area_grafico" style="margin-top: 50px;">
+					<div class="col-md-12">
+						<div id="chartdiv2"></div>
 					</div>
 				</div>
 
 				<div class="row">
 					<div class="col-md-12">
 						<h1>Analisis de Datos</h1>
-						<a href="jupyter/vacunas_x_jurisdiccion.html">Ir al Jupyter</a>
+						<a href="jupyter/vacunados_foraneos.html">Ir al Jupyter</a>
 	            	</div>
 	            </div>
 			</div>
@@ -138,7 +120,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						Desarrollado por: AGUIRRE Federico, IBAÑEZ Lucas - Materia: Visualización de la Información (Esp. en Ciencias de Datos - ITBA) - 2021
+						Desarrollado por: AGUIRRE Federico, IBAÑEZ Lucas - Materia: Visualización de la Información (Esp. en Ciencias de Datos - ITBA)
 					</div>
 
 				</div>
@@ -151,9 +133,10 @@
 		<!-- AmChart Recursos -->
 		<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
 		<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
-		<script src="https://cdn.amcharts.com/lib/4/themes/kelly.js"></script>
+		<script src="https://cdn.amcharts.com/lib/4/themes/dark.js"></script>
+		<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
 
-		<script src="datos/vacunas_x_jurisdiccion_data.js"></script>
-		<script src="../static/js/graficos/vacunas_x_jurisdiccion.js"></script>
+		<script src="datos/vacunados_foraneos_data.js"></script>
+		<script src="../static/js/graficos/vacunados_foraneos.js"></script>
 	</body>
 </html>
