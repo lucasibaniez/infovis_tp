@@ -67,7 +67,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h4 class="page-head-line">Vacunas Aplicadas en el Tiempo</h4>
+						<h4 class="page-head-line">Vacunaciones No coincidentes con su Jurisdicción de Residencia</h4>
 					</div>
 				</div>
 
@@ -75,16 +75,16 @@
 	                <div class="col-md-12">
 	                    <div class="alert alert-warning">
 	                    	<h3>Pregunta de Interés:</h3>
-	                        <strong>¿Cómo fue el avance de la vacunación en cada Jurisdicción?</strong>
+	                        <strong>¿Cuál es el estado de vacunaciones no coincidentes con su jurisdicción de residencia de cada provincia, según las dosis administradas?</strong>
 	                        <br>
 	                        <h3>Obtención del dataset:</h3>
 	 						<p>Los datos se encuentran publicos en el siguiente <a href="https://sisa.msal.gov.ar/datos/descargas/covid-19/files/datos_nomivac_covid19.zip">enlace</a></p>
 
 	 						<br>
 	                        <h3>Modelado y Construcción del modelo:</h3>
-	                        <p>Se utilizó Python con Jupyter y pandas para el análisis de los datos y generación del dataset a utilizar en el gráfico.</p>
-	                        <p>Como librería grafica se utilizó <a href="https://www.amcharts.com/"><strong>amCharts</strong></a></p>
-	                  
+	                        <p>Se utilizó Python con Jupyter y Pandas para el análisis de los datos y generación del dataset a utilizar en el gráfico.</p>
+	                        <p>Como herramienta grafica se utilizó <a href="https://app.flourish.studio/login"><strong>Flourish</strong></a></p>
+
 	                    </div>
 	                </div>
 
@@ -92,44 +92,16 @@
 
 				<div class="row area_grafico">
 					<div class="col-md-12">
-
-
-
-
-
-						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-						  	<div class="panel panel-default">
-							    <div class="panel-heading" role="tab" id="headingOne">
-							        <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseDosis1" aria-expanded="true" aria-controls="collapseDosis1"><strong>Aplicación 1ra Dosis (%)</strong></a></h4>						      
-							    </div>
-							    <div id="collapseDosis1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-								    <div class="panel-body">
-								        <div id="chartdiv"></div>
-								    </div>
-							    </div>
-						  	</div>
-
-						  	<div class="panel panel-default">
-							    <div class="panel-heading" role="tab" id="headingOne">
-							        <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseDosis2" aria-expanded="true" aria-controls="collapseDosis2"><strong>Aplicación 2da Dosis (%)</strong></a></h4>						      
-							    </div>
-							    <div id="collapseDosis2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-								    <div class="panel-body">
-								        <div id="chartdiv2"></div>
-								    </div>
-							    </div>
-						  	</div>
-						</div>
-
-
-						
+						<h1>Cantidad de Vacunaciones no Coincidentes con su Jurisdicción de Residencia, según dosis aplicada</h1>
+                        <div class="flourish-embed flourish-hierarchy" data-src="visualisation/7409919"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 					</div>
 				</div>
+
 
 				<div class="row">
 					<div class="col-md-12">
 						<h1>Analisis de Datos</h1>
-						<a href="jupyter/vacunas_x_jurisdiccion.html">Ir al Jupyter</a>
+						<a href="jupyter/vacunas_coincidentes_residencia.html">Ir al Jupyter</a>
 	            	</div>
 	            </div>
 			</div>
@@ -149,11 +121,6 @@
 		<script src="../static/js/bootstrap.js"></script>
 
 		<!-- AmChart Recursos -->
-		<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
-		<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
-		<script src="https://cdn.amcharts.com/lib/4/themes/kelly.js"></script>
 
-		<script src="datos/vacunas_x_jurisdiccion_data.js"></script>
-		<script src="../static/js/graficos/vacunas_x_jurisdiccion.js"></script>
 	</body>
 </html>

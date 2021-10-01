@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+		<title>InfoVis - ITBA (Chaco)</title>
+
+		<link rel="shortcut icon" href="https://www.itba.edu.ar/wp-content/uploads/2016/04/favicon.png">
+		<link href="../static/css/bootstrap.css" rel="stylesheet" />
+		<link href="../static/css/font-awesome.css" rel="stylesheet" />
+		<link href="../static/css/style.css" rel="stylesheet" />
+
+		<style type="text/css">
+
+			#chartdiv {
+			  	width: 100%;
+			  	height: 2500px;
+			}
+
+			#chartdiv2 {
+			  	width: 100%;
+			  	height: 2500px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="navbar navbar-inverse set-radius-zero">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="../index.html">
+						<img src="https://www.itba.edu.ar/wp-content/uploads/2021/08/ITBA-logo.png" />
+					</a>
+				</div>
+
+				<div class="left-div">
+					<div class="user-settings-wrapper">
+						<ul class="nav">
+							<li class="dropdown">
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="menu-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="navbar-collapse collapse ">
+							<ul id="menu-top" class="nav navbar-nav navbar-right">
+								<li><a class="menu-top-active" href="../index.html">Inicio</a></li>
+								<li><a href="../acerca_de.html">Acerca De</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<div class="content-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h4 class="page-head-line">Vacunaciones No coincidentes con su Jurisdicción de Residencia</h4>
+					</div>
+				</div>
+
+				<div class="row">
+	                <div class="col-md-12">
+	                    <div class="alert alert-warning">
+	                    	<h3>Pregunta de Interés:</h3>
+	                        <strong>¿Cuál es el estado (en vantidad y porcentaje) de vacunaciones no coincidentes con su jurisdicción de residencia de cada provincia?</strong>
+	                        <br>
+	                        <h3>Obtención del dataset:</h3>
+	 						<p>Los datos se encuentran publicos en el siguiente <a href="https://sisa.msal.gov.ar/datos/descargas/covid-19/files/datos_nomivac_covid19.zip">enlace</a></p>
+
+	 						<br>
+	                        <h3>Modelado y Construcción del modelo:</h3>
+	                        <p>Se utilizó Python con Jupyter y Pandas para el análisis de los datos y generación del dataset a utilizar en el gráfico.</p>
+	                        <p>Como herramienta grafica se utilizó <a href="https://www.tableau.com/"><strong>Tableau</strong></a></p>
+
+	                    </div>
+	                </div>
+
+	            </div>
+
+				<div class="row area_grafico">
+					<div class="col-md-12">
+						<h1>Porcentaje del Total de Vacunaciones no Coincidentes con su Jurisdicción de Residencia</h1>
+						<div class='tableauPlaceholder' id='viz1633095337859' style='position: relative'><noscript><a href='#'><img alt='Dashboard 3 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Va&#47;VacunacionesNoCoincidentesconResidenciadeJurisdiccin&#47;Dashboard3&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='VacunacionesNoCoincidentesconResidenciadeJurisdiccin&#47;Dashboard3' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Va&#47;VacunacionesNoCoincidentesconResidenciadeJurisdiccin&#47;Dashboard3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='es-ES' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1633095337859');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='800px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='800px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+					</div>
+				</div>
+
+					<div class="row area_grafico">
+						<div class="col-md-12">
+							<h1>Cantidad Vacunaciones no Coincidentes con su Jurisdicción de Residencia</h1>
+							<div class='tableauPlaceholder' id='viz1633095674757' style='position: relative'><noscript><a href='#'><img alt='Dashboard 5 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;CantidaddeVacunacionesNoCoincidentesconResidenciadeJurisdiccin&#47;Dashboard5&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CantidaddeVacunacionesNoCoincidentesconResidenciadeJurisdiccin&#47;Dashboard5' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;CantidaddeVacunacionesNoCoincidentesconResidenciadeJurisdiccin&#47;Dashboard5&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='es-ES' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1633095674757');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='800px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='800px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+						</div>
+					</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Analisis de Datos</h1>
+						<a href="jupyter/vacunas_coincidentes_residencia.html">Ir al Jupyter</a>
+	            	</div>
+	            </div>
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						Desarrollado por: AGUIRRE Federico, IBAÑEZ Lucas - Materia: Visualización de la Información (Esp. en Ciencias de Datos - ITBA) - 2021
+					</div>
+
+				</div>
+			</div>
+		</footer>
+
+		<script src="../static/js/jquery-1.11.1.js"></script>
+		<script src="../static/js/bootstrap.js"></script>
+
+		<!-- AmChart Recursos -->
+
+	</body>
+</html>
