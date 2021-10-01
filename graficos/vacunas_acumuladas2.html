@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+		<title>InfoVis - ITBA (Chaco)</title>
+
+		<link rel="shortcut icon" href="https://www.itba.edu.ar/wp-content/uploads/2016/04/favicon.png">
+		<link href="../static/css/bootstrap.css" rel="stylesheet" />
+		<link href="../static/css/font-awesome.css" rel="stylesheet" />
+		<link href="../static/css/style.css" rel="stylesheet" />
+
+		<style type="text/css">
+			#chartdiv {
+			  	width: 100%;
+			  	height: 500px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="navbar navbar-inverse set-radius-zero">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="../index.html">
+						<img src="https://www.itba.edu.ar/wp-content/uploads/2021/08/ITBA-logo.png" />
+					</a>
+				</div>
+
+				<div class="left-div">
+					<div class="user-settings-wrapper">
+						<ul class="nav">
+							<li class="dropdown">
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="menu-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="navbar-collapse collapse ">
+							<ul id="menu-top" class="nav navbar-nav navbar-right">
+								<li><a class="menu-top-active" href="../index.html">Inicio</a></li>
+								<li><a href="../acerca_de.html">Acerca De</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<div class="content-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h4 class="page-head-line">Vacunas Acumuladas 2da Dosis</h4>
+					</div>
+				</div>
+
+				<div class="row">
+	                <div class="col-md-12">
+	                    <div class="alert alert-warning">
+	                    	<h3>Pregunta de Interes:</h3>
+	                        <strong>¿?</strong>
+	                        <br>
+	                        <h3>Obtención del dataset:</h3>
+	 						<p>Los datos se encuentran publicos en el siguiente <a href="https://sisa.msal.gov.ar/datos/descargas/covid-19/files/datos_nomivac_covid19.zip">enlace</a></p>
+
+	 						<br>
+	                        <h3>Modelado y Construcción del modelo:</h3>
+	                        <p>Se utilizo Python con Jupyter y pandas para el analisis de los datos y generación del dataset a utilizar en el gráfico.</p>
+	                        <p>Como libreria grafica se utilizo <a href="https://www.amcharts.com/"><strong>amCharts</strong></a></p>
+	                  
+	                    </div>
+	                </div>
+
+	            </div>
+
+				<div class="row area_grafico">
+					<div class="col-md-12">
+						<div id="chartdiv"></div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Analisis de Datos</h1>
+						<a href="jupyter/vacunas_acumuladas.html">Ir al Jupyter</a>
+	            	</div>
+	            </div>
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						Desarrollado por: AGUIRRE Federico, IBAÑEZ Lucas - Materia: Visualización de la Información (Esp. en Ciencias de Datos - ITBA)
+					</div>
+
+				</div>
+			</div>
+		</footer>
+
+		<script src="../static/js/jquery-1.11.1.js"></script>
+		<script src="../static/js/bootstrap.js"></script>
+
+		<!-- AmChart Recursos -->
+		<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+		<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+		<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
+		<script src="datos/vacunas_acumuladas_data.js"></script>
+		<script src="../static/js/graficos/vacunas_acumuladas2.js"></script>
+	</body>
+</html>
