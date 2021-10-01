@@ -4,9 +4,9 @@ am4core.ready(function() {
 am4core.useTheme(am4themes_kelly);
 // Themes end
 
-/**
- * Chart design taken from Samsung health app
- */
+/* ================================
+            1ra Dosis
+   ================================*/
 
 var chart = am4core.create("chartdiv", am4charts.XYChart);
 chart.hiddenState.properties.opacity = 0; // this creates initial fade-in
@@ -40,13 +40,15 @@ series.tooltip.pointerOrientation = "vertical";
 series.tooltip.dy = - 30;
 series.columnsContainer.zIndex = 100;
 
+categoryAxis.sortBySeries = series;
+
 var columnTemplate = series.columns.template;
 columnTemplate.height = am4core.percent(50);
 columnTemplate.maxHeight = 50;
 columnTemplate.column.cornerRadius(60, 10, 60, 10);
 columnTemplate.strokeOpacity = 0;
 
-series.heatRules.push({ target: columnTemplate, property: "fill", dataField: "valueX", min: am4core.color("#e5dc36"), max: am4core.color("#5faa46") });
+series.heatRules.push({ target: columnTemplate, property: "fill", dataField: "valueX", min: am4core.color("#889AF2"), max: am4core.color("#0A218D") });
 series.mainContainer.mask = undefined;
 
 var cursor = new am4charts.XYCursor();
@@ -141,13 +143,15 @@ series.tooltip.pointerOrientation = "vertical";
 series.tooltip.dy = - 30;
 series.columnsContainer.zIndex = 100;
 
+categoryAxis.sortBySeries = series;
+
 var columnTemplate = series.columns.template;
 columnTemplate.height = am4core.percent(50);
 columnTemplate.maxHeight = 50;
 columnTemplate.column.cornerRadius(60, 10, 60, 10);
 columnTemplate.strokeOpacity = 0;
 
-series.heatRules.push({ target: columnTemplate, property: "fill", dataField: "valueX", min: am4core.color("#e5dc36"), max: am4core.color("#5faa46") });
+series.heatRules.push({ target: columnTemplate, property: "fill", dataField: "valueX", min: am4core.color("#889AF2"), max: am4core.color("#0A218D") });
 series.mainContainer.mask = undefined;
 
 var cursor = new am4charts.XYCursor();

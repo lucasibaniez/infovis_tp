@@ -92,15 +92,37 @@
 
 				<div class="row area_grafico">
 					<div class="col-md-12">
-						<h1>Aplicación 1ra Dosis</h1>
-						<div id="chartdiv"></div>
-					</div>
-				</div>
 
-				<div class="row area_grafico">
-					<div class="col-md-12">
-						<h1>Aplicación 2da Dosis</h1>
-						<div id="chartdiv2"></div>
+
+
+
+
+						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						  	<div class="panel panel-default">
+							    <div class="panel-heading" role="tab" id="headingOne">
+							        <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseDosis1" aria-expanded="true" aria-controls="collapseDosis1"><strong>Aplicación 1ra Dosis (%)</strong></a></h4>						      
+							    </div>
+							    <div id="collapseDosis1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+								    <div class="panel-body">
+								        <div id="chartdiv"></div>
+								    </div>
+							    </div>
+						  	</div>
+
+						  	<div class="panel panel-default">
+							    <div class="panel-heading" role="tab" id="headingOne">
+							        <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseDosis2" aria-expanded="true" aria-controls="collapseDosis2"><strong>Aplicación 2da Dosis (%)</strong></a></h4>						      
+							    </div>
+							    <div id="collapseDosis2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+								    <div class="panel-body">
+								        <div id="chartdiv2"></div>
+								    </div>
+							    </div>
+						  	</div>
+						</div>
+
+
+						
 					</div>
 				</div>
 
