@@ -6,7 +6,7 @@ REF_MES = ["DICIEMBRE 2020", "ENERO 2021", "FEBRERO 2021", "MARZO 2021", "ABRIL 
 am4core.useTheme(am4themes_animated);
 // Themes end
 
-var chart = am4core.create("chartdiv", am4charts.XYChart);
+var chart = am4core.create("chartdiv2", am4charts.XYChart);
 chart.padding(40, 40, 40, 40);
 /*
 chart.numberFormatter.bigNumberPrefixes = [

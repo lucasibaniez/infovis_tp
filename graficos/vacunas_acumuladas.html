@@ -61,23 +61,23 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h4 class="page-head-line">Vacunas Acumuladas 1ra Dosis</h4>
+						<h4 class="page-head-line">Evolución de los Tipos de Vacunas Utilizadas</h4>
 					</div>
 				</div>
 
 				<div class="row">
 	                <div class="col-md-12">
 	                    <div class="alert alert-warning">
-	                    	<h3>Pregunta de Interes:</h3>
-	                        <strong>¿?</strong>
+	                    	<h3>Pregunta de Interés:</h3>
+	                        <strong>¿Cómo fué la evolución en el tiempo de utilización de tipos de vacunas para distintas dosis?</strong>
 	                        <br>
 	                        <h3>Obtención del dataset:</h3>
-	 						<p>Los datos se encuentran publicos en el siguiente <a href="https://sisa.msal.gov.ar/datos/descargas/covid-19/files/datos_nomivac_covid19.zip">enlace</a></p>
+	 						<p>Los datos se encuentran públicos en el siguiente <a href="https://sisa.msal.gov.ar/datos/descargas/covid-19/files/datos_nomivac_covid19.zip">enlace</a></p>
 
 	 						<br>
 	                        <h3>Modelado y Construcción del modelo:</h3>
-	                        <p>Se utilizo Python con Jupyter y pandas para el analisis de los datos y generación del dataset a utilizar en el gráfico.</p>
-	                        <p>Como libreria grafica se utilizo <a href="https://www.amcharts.com/"><strong>amCharts</strong></a></p>
+	                        <p>Se utilizó Python con Jupyter y Pandas para el análisis de los datos y generación del dataset a utilizar en el gráfico.</p>
+	                        <p>Como librería gráfica se utilizó <a href="https://www.amcharts.com/"><strong>amCharts</strong></a></p>
 	                  
 	                    </div>
 	                </div>
@@ -85,14 +85,22 @@
 	            </div>
 
 				<div class="row area_grafico">
+					<h2>Evolución de los Tipos de Vacunas Utilizadas como 1era Dosis</h2>
 					<div class="col-md-12">
 						<div id="chartdiv"></div>
 					</div>
 				</div>
 
+				<div class="row area_grafico">
+					<h2>Evolución de los Tipos de Vacunas Utilizadas como 2da Dosis</h2>
+					<div class="col-md-12">
+						<div id="chartdiv2"></div>
+					</div>
+				</div>
+
 				<div class="row">
 					<div class="col-md-12">
-						<h1>Analisis de Datos</h1>
+						<h2>Análisis de Datos</h2>
 						<a href="jupyter/vacunas_acumuladas.html">Ir al Jupyter</a>
 	            	</div>
 	            </div>
@@ -119,5 +127,6 @@
 
 		<script src="datos/vacunas_acumuladas_data.js"></script>
 		<script src="../static/js/graficos/vacunas_acumuladas.js"></script>
+		<script src="../static/js/graficos/vacunas_acumuladas2.js"></script>
 	</body>
 </html>
